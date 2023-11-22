@@ -1,0 +1,20 @@
+[
+    {"name":"Acero","inmune":[],"debil":["Acero","Agua","Electrico","Fuego"],"fuerte":["Hada", "Hielo", "Roca"]},
+    {"name":"Agua","inmune":[],"debil":["Agua","Dragon","Planta"],"fuerte":["Fuego","Roca","Tierra"]},
+    {"name":"Bicho","inmune":[],"debil":["Acero","Fantasma","Fuego","Hada","Lucha","Veneno","Volador"],"fuerte":["Planta","Psiquico","Siniestro"]},
+    {"name":"Dragon","inmune":["Hada"],"debil":["Acero"],"fuerte":["Dragon"]},
+    {"name":"Electrico","inmune":["Tierra"],"debil":["Dragon","Electrico","Planta"],"fuerte":["Agua","Volador"]},
+    {"name":"Fantasma","inmune":["Normal"],"debil":["Siniestro"],"fuerte":["Fantasma","Psiquico"]},
+    {"name":"Fuego","inmune":[],"debil":["Agua","Dragon","Fuego","Roca"],"fuerte":["Acero","Bicho","Hielo","Planta"]},
+    {"name":"Hada","inmune":[],"debil":["Acero","Fuego","Veneno"],"fuerte":["Dragon","Lucha","Siniestro"]},
+    {"name":"Hielo","inmune":[],"debil":["Acero","Agua","Fuego","Hielo"],"fuerte":["Dragon","Planta","Tierra","Volador"]},
+    {"name":"Lucha","inmune":["Fantasma"],"debil":["Bicho","Hada","Psiquico","Veneno","Volador"],"fuerte":["Acero","Hielo","Normal","Roca","Siniestro"]},
+    {"name":"Normal","inmune":["Fantasma"],"debil":["Acero","Roca"],"fuerte":[]},
+    {"name":"Planta","inmune":[],"debil":["Acero","Bicho","Dragon","Fuego","Planta","Veneno","Volador"],"fuerte":["Agua","Roca","Tierra"]},
+    {"name":"Psiquico","inmune":["Siniestro"],"debil":["Acero","Psiquico"],"fuerte":["Lucha","Veneno"]},
+    {"name":"Roca","inmune":[],"debil":["Acero","Lucha","Tierra"],"fuerte":["Bicho","Fuego","Hielo","Volador"]},
+    {"name":"Siniestro","inmune":[],"debil":["Hada","Lucha","Siniestro"],"fuerte":["Fantasma","Psiquico"]},
+    {"name":"Tierra","inmune":["Volador"],"debil":["Bicho","Planta"],"fuerte":["Acero","Electrico","Fuego","Roca","Veneno"]},
+    {"name":"Veneno","inmune":["Acero"],"debil":["Fantasma","Roca","Tierra","Veneno"],"fuerte":["Hada","Planta"]},
+    {"name":"Volador","inmune":[],"debil":["Acero","Electrico","Roca"],"fuerte":["Bicho","Lucha","Planta"]}
+]

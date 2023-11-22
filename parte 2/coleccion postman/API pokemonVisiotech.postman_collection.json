@@ -1,0 +1,569 @@
+{
+	"info": {
+		"_postman_id": "aeaf99a7-35f8-4cc1-a7e7-bb3911a09a85",
+		"name": "API pokemonVisiotech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23052145"
+	},
+	"item": [
+		{
+			"name": "Pokemons",
+			"item": [
+				{
+					"name": "Listar todos los pokemon",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/pokemons",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"pokemons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener pokemon por nombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/pokemon/Squirtle",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"pokemon",
+								"Squirtle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear nuevo pokemon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Charmander\",\n    \"tipo\": \"Fuego\",\n    \"salud_total\": 39,\n    \"ataque_base\": 52,\n    \"defensa_base\": 43,\n    \"ataque_especial_base\": 60,\n    \"defensa_especial_base\": 50,\n    \"velocidad_base\": 65\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/pokemon",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"pokemon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar pokemon",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Charmander\",\n    \"tipo\": \"Fuego\",\n    \"salud_total\": 120,\n    \"ataque_base\": 10,\n    \"defensa_base\": 10,\n    \"ataque_especial_base\": 10,\n    \"defensa_especial_base\": 10,\n    \"velocidad_base\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/pokemon/Charmander",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"pokemon",
+								"Charmander"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar pokemon",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/pokemon/Charmander",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"pokemon",
+								"Charmander"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ataques",
+			"item": [
+				{
+					"name": "Listar todos los ataques",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/ataques",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"ataques"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener ataque por nombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/ataque/Impactrueno",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"ataque",
+								"Impactrueno"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear nuevo ataque",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Bomba Ignea\",\n    \"tipo\": \"Fuego\",\n    \"poder\": 100\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/ataque",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"ataque"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar ataque",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Bomba Ignea\",\n    \"tipo\": \"Fuego\",\n    \"poder\": 150\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/ataque/Bomba Ignea",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"ataque",
+								"Bomba Ignea"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar ataque",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/ataque/Bomba Ignea",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"ataque",
+								"Bomba Ignea"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Equipo",
+			"item": [
+				{
+					"name": "Obtener equipo de un jugador",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/equipo/Jesus",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"equipo",
+								"Jesus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atrapar un pokemon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre_entrenador\": \"Jesus\",\n    \"nombre_pokemon\": \"Arcanine\",\n    \"nombre_propio\": \"Antonio\",\n    \"nivel\": 20,\n    \"salud_actual\": 100\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/equipo/capturar",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"equipo",
+								"capturar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar pokemon de un equipo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre_entrenador\": \"Jesus\",\n    \"nombre_pokemon\": \"Arcanine\",\n    \"nombre_propio\": \"Antonio\",\n    \"nivel\": 25,\n    \"salud_actual\": 100\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/equipo/Jesus/Antonio",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"equipo",
+								"Jesus",
+								"Antonio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Liberar pokemon",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/equipo/liberar/Jesus/Antonio",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"equipo",
+								"liberar",
+								"Jesus",
+								"Antonio"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Entrenamiento",
+			"item": [
+				{
+					"name": "Listar ataques aprendidos por un pokemon",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/entrenamiento/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"entrenamiento",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Aprender un ataque",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pokemon_id\": 1,\n    \"ataque_nombre\": \"Nitrocarga\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/entrenamiento/aprender",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"entrenamiento",
+								"aprender"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar un ataque aprendido",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pokemon_id\": 1,\n    \"ataque_nombre\": \"Nitrocarga\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/entrenamiento/1/Bomba Ignea",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"entrenamiento",
+								"1",
+								"Bomba Ignea"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Olvidar un ataque",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/entrenamiento/olvidar/1/Nitrocarga",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"entrenamiento",
+								"olvidar",
+								"1",
+								"Nitrocarga"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Otros",
+			"item": [
+				{
+					"name": "Obtener ataques compatibles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/ataques_compatibles/Arcanine",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"ataques_compatibles",
+								"Arcanine"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener pokemons con ataque aprendido",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/ataque_compartido/Placaje",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"ataque_compartido",
+								"Placaje"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
