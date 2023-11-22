@@ -3,6 +3,7 @@ import mysql.connector
 
 app = Flask(__name__)
 
+# Credenciales de la base de datos
 PASS_DB = "mysqlpass"
 HOST = "127.0.0.1"
 USER = "root"

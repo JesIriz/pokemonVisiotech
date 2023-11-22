@@ -106,5 +106,3 @@ VALUES (
     (SELECT id FROM equipo_pokemon op WHERE op.nombre_pokemon = "Grookey" AND op.entrenador = "Gustavo"),
     'Latigo cepa'
 );
-
-SELECT a.nombre AS nombre_ataque, a.tipo AS tipo_ataque, a.poder AS poder_ataque FROM ataque a JOIN pokemon p ON a.tipo = p.tipo WHERE p.nombre = "Arcanine"
