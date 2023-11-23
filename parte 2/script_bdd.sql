@@ -18,7 +18,7 @@ CREATE TABLE equipo_pokemon (
     entrenador VARCHAR(255),
     nombre_propio VARCHAR(255),
     nivel INT,
-    salud_actual FLOAT,
+    salud_actual DECIMAL(10,2),
 	FOREIGN KEY (nombre_pokemon) REFERENCES pokemon(nombre)
 );
 

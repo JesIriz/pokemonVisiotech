@@ -41,4 +41,11 @@ Para el desarrollo de esta parte, al tratarse de una API CRUD, se ha optado por 
     - pip install Flask
   - Una vez instalada, para lanzar la API habría que escribir lo siguiente por consola:
     - flask run
-- Para la ejecución de las pruebas, se adjunta una colección de Postman que contiene todos los endpoints disponibles junto a una breve descripción de ellos y un ejemplo funcional.
+- Para la ejecución de las pruebas, se adjunta una colección de Postman que contiene todos los endpoints disponibles junto a una breve descripción de ellos y un ejemplo funcional. Se encuentra en la carpeta "parte 2/coleccion postman".
+
+## Parte 3
+
+Para el desarrollo de esta parte, se utilizan bases asentadas en la parte 1 y 2 para implementar un simulador de combate pokemon:
+- Se utiliza la misma base de datos empleada en la parte 2, más una nueva tabla definida en el script ***script_bdd.sql***, presente en la carpeta "parte 3".
+- Se implementan unos nuevos endpoints, utilizando igualmente Flask. Para lanzar la API es necesario ejecutar el mismo comando que en la parte 2, pero esta vez desde dentro de la carpete "parte 3".
+- Se incluye una nueva colección de Postman en la carpeta "parte 3/coleccion postman".

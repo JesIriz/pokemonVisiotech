@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "3bd473b0-f831-4e44-b6b5-0e2fe542a44d",
+		"name": "Simulador de combate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23052145"
+	},
+	"item": [
+		{
+			"name": "Iniciar una nueva partida",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"jugador1\": \"Jesus\",\n    \"jugador2\": \"Gustavo\",\n    \"pokemon1_jugador1\": \"Pepe\",\n    \"pokemon2_jugador1\": \"Pepito\",\n    \"pokemon1_jugador2\": \"Gustavin\",\n    \"pokemon2_jugador2\": \"Gustavito\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/partida/iniciar",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"partida",
+						"iniciar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ver estado de la partida",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/partida/estado/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"partida",
+						"estado",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jugar ronda",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_partida\": 1,\n    \"pokemon_atacante\": \"Pepe\",\n    \"ataque_seleccionado\": \"Impactrueno\",\n    \"pokemon_objetivo\": \"Gustavin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/partida/jugar",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"partida",
+						"jugar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar partida",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/partida/eliminar/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"partida",
+						"eliminar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
